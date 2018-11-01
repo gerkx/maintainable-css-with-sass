@@ -68,8 +68,6 @@ textarea {
 
 .container {
   margin: 6rem;
-  /* display: flex;
-  justify-content: center; */
 }
 
 .specificity {
@@ -79,15 +77,11 @@ textarea {
 /* ------------------------------------- */
 /* End of template code. New code below  */
 /* ------------------------------------- */
+#submit-button {
+  background-color: #15DEA5;
+}
 
 .button { 
   background-color: #DB464B;
 }
 
-.submit {
-  background-color: #15DEA5;
-}
-
-button {
-  background-color: #15DEA5;
-}

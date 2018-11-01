@@ -95,10 +95,20 @@ textarea {
   cursor: pointer;
 }
 
-.btn-wide {
-  width: 100%;
+.btn-alt {
+  padding: 1.5rem;
+  border: 0.1rem solid #DB464B;
+  color: #DB464B;
+  background: #001534;
+  cursor: pointer;
 }
 
-.btn-rounded {
+.btn-alt2 {
+  padding: 1.5rem;
+  border: 0.1rem solid #15DEA5;
+  color: #15DEA5;
+  background: #001534;
+  cursor: pointer;
   border-radius: 3rem;
+  width: 100%;
 }

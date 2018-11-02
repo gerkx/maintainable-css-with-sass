@@ -1,6 +1,6 @@
 $colour-primary: #15DEA5;
 
-@mixin typography {
+%typography {
   color: $colour-primary;
   font-size: 2rem;
   font-weight: 100;
@@ -8,14 +8,14 @@ $colour-primary: #15DEA5;
 }
 
 h1 {
-  @include typography;
+  @extend %typography;
 }
 textarea {
-  @include typography;
+  @extend %typography;
 }
 button {
-  @include typography;
+  @extend %typography;
 }
 input {
-  @include typography;
+  @extend %typography;
 }

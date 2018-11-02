@@ -38,13 +38,6 @@ body {
   line-height: 1.7;
 }
 
-.container {
-  margin: 6rem;
-  padding: 1.5rem 1.5rem 0 1.5rem;
-  border: 0.1rem solid #D6FFF5;
-}
-
-
 .btn {
   padding: 1.5rem;
   border: 0.1rem solid #15DEA5;
@@ -60,9 +53,14 @@ body {
         margin: 0 auto;
     }
 }
+.container {
+  margin: 6rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  border: 0.1rem solid #D6FFF5;
+}
 // ^^^^ template code ^^^^ //
 
-
+$mint: #15DEA5;
 
 .form {
   width: 100%;
@@ -71,7 +69,7 @@ body {
     width: 100%;
     color: #fff;
     text-shadow: 0.55rem 0.55rem #11af82;
-    background: #15DEA5;
+    background: $mint;
     line-height: 5rem;
     padding: 1.5rem;
   }
@@ -86,7 +84,7 @@ body {
     input {
       width: 100%;
       background: #001534;
-      border: 0.1rem solid #15DEA5;
+      border: 0.1rem solid $mint;
       padding: 1.5rem;
       color: #D6FFF5;
       font-weight: 900;
@@ -95,9 +93,9 @@ body {
     }
     textarea {
       width: 100%;
-      color: #15DEA5;
+      color: $mint;
       background: #001534;
-      border: 0.1rem solid #15DEA5;
+      border: 0.1rem solid $mint;
       outline: none;
       padding: 1.5rem;
       margin-bottom: 0.75rem;

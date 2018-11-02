@@ -37,12 +37,6 @@ body {
   line-height: 1.7;
 }
 
-.container {
-  margin: 6rem;
-  padding: 1.5rem 1.5rem 0 1.5rem;
-  border: 0.1rem solid #D6FFF5;
-}
-
 .btn {
   padding: 1.5rem;
   border: 0.1rem solid #15DEA5;
@@ -57,6 +51,12 @@ body {
 .btn--full-width {
   width: 100%;
   margin: 0 auto;
+}
+
+.container {
+  margin: 6rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  border: 0.1rem solid #D6FFF5;
 }
 
 .form {

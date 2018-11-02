@@ -1,0 +1,69 @@
+// pseudo nesting
+.nav {
+    padding-right: 6rem;
+    flex: 2 1 auto;
+    text-align: right;
+        .nav__link {
+            display: inline;
+            font-size: 3rem;
+            padding-left: 1.5rem;
+                .nav__link--active {
+                    color: #001534;
+                }
+        }
+}
+
+///////////////////////////////
+// CSS Preprocessor features //
+///////////////////////////////
+
+// nesting
+.nav {
+    padding-right: 6rem;
+    flex: 2 1 auto;
+    text-align: right;
+    nav__link {
+        display: inline;
+        font-size: 3rem;
+        padding-left: 1.5rem;
+        nav__link--active {
+            color: #001534;;
+        }
+    }
+}
+
+// variables
+$mint: #15DEA5;
+
+.header {
+    background-color: $mint;
+}
+
+// loops
+$colours:(
+    mint: #15DEA5,
+    navy: #001534,
+    seafoam: #D6FFF5,
+    white: #fff,
+    rust: #DB464B
+);
+
+@each $colour, $hex in $colours {
+    .btn--#{$colour} {
+        background-color: $hex;
+    }
+}
+
+// logical operations
+@if (lightness(#15DEA5) > 25%) {
+    .header {
+        color: #fff;
+        background-color: $mint;
+    }
+
+}@else{
+    .header {
+    color: #000;
+    background-color: $mint;
+    }   
+}

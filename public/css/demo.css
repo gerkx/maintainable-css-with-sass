@@ -1,0 +1,43 @@
+.nav {
+  padding-right: 6rem;
+  flex: 2 1 auto;
+  text-align: right; }
+  .nav .nav__link {
+    display: inline;
+    font-size: 3rem;
+    padding-left: 1.5rem; }
+    .nav .nav__link .nav__link--active {
+      color: #001534; }
+
+.nav {
+  padding-right: 6rem;
+  flex: 2 1 auto;
+  text-align: right; }
+  .nav nav__link {
+    display: inline;
+    font-size: 3rem;
+    padding-left: 1.5rem; }
+    .nav nav__link nav__link--active {
+      color: #001534; }
+
+.header {
+  background-color: #15DEA5; }
+
+.btn--mint {
+  background-color: #15DEA5; }
+
+.btn--navy {
+  background-color: #001534; }
+
+.btn--seafoam {
+  background-color: #D6FFF5; }
+
+.btn--white {
+  background-color: #fff; }
+
+.btn--rust {
+  background-color: #DB464B; }
+
+.header {
+  color: #fff;
+  background-color: #15DEA5; }

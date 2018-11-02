@@ -35,7 +35,7 @@ body {
   color: #15DEA5;
   font-size: 2rem;
   font-weight: 100;
-  line-height: 1.7;
+  line-height: 1.701;
 }
 
 .btn {
@@ -60,7 +60,41 @@ body {
 }
 // ^^^^ template code ^^^^ //
 
-$mint: #15DEA5;
+
+
+@mixin mixin-name {
+  css-property: value;
+}
+
+
+
+
+
+$colour-primary: #15DEA5;
+$colour-white: #fff;
+$heading-shadow-size: 0.55rem;
+
+@mixin heading-shadow($colour: $colour-primary, $size: $heading-shadow-size){
+  text-shadow: $size $size $colour;
+}
+
+
+
+.heading{
+  &__header {
+    @include heading-shadow($colour-white);  
+  }
+}
+.about{
+  &__heading {
+      @include heading-shadow;    
+  }
+}
+.project{
+  &__heading{
+    @include heading-shadow;  
+  }
+}
 
 .form {
   width: 100%;
@@ -68,8 +102,8 @@ $mint: #15DEA5;
   &__heading {
     width: 100%;
     color: #fff;
-    text-shadow: 0.55rem 0.55rem #11af82;
-    background: $mint;
+    @include heading-shadow;  
+    background: $colour-primary;
     line-height: 5rem;
     padding: 1.5rem;
   }
@@ -84,7 +118,7 @@ $mint: #15DEA5;
     input {
       width: 100%;
       background: #001534;
-      border: 0.1rem solid $mint;
+      border: 0.1rem solid $colour-primary;
       padding: 1.5rem;
       color: #D6FFF5;
       font-weight: 900;
@@ -93,9 +127,9 @@ $mint: #15DEA5;
     }
     textarea {
       width: 100%;
-      color: $mint;
+      color: $colour-primary;
       background: #001534;
-      border: 0.1rem solid $mint;
+      border: 0.1rem solid $colour-primary;
       outline: none;
       padding: 1.5rem;
       margin-bottom: 0.75rem;

@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background: #001534;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #15DEA5;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+.container {
+  margin: 6rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+  background: #15DEA5;
+  color: white;
+  padding: 1.5rem 3rem;
+}
+.btn--disabled {
+  background: grey;
+}
+.btn--outline {
+  background: transparent;
+  border: 2px solid #15DEA5;
+  color: #15DEA5;
+}
+.btn--outline.btn--disabled {
+  border: 2px solid grey;
+  color: grey;
+}

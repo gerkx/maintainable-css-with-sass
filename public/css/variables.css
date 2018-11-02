@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background: #001534;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.75rem;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #15DEA5;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+.container {
+  margin: 6rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  border: 0.1rem solid #D6FFF5;
+}
+
+.btn {
+  padding: 1.5rem;
+  border: 0.1rem solid #15DEA5;
+  color: #15DEA5;
+  background: #001534;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #15DEA5;
+  color: #D6FFF5;
+}
+.btn--full-width {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+.form__heading {
+  width: 100%;
+  color: #fff;
+  text-shadow: 0.55rem 0.55rem #11af82;
+  background: #15DEA5;
+  line-height: 5rem;
+  padding: 1.5rem;
+}
+.form__field label {
+  color: #D6FFF5;
+  display: block;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+}
+.form__field input {
+  width: 100%;
+  background: #001534;
+  border: 0.1rem solid #15DEA5;
+  padding: 1.5rem;
+  color: #D6FFF5;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.75rem;
+}
+.form__field textarea {
+  width: 100%;
+  color: #15DEA5;
+  background: #001534;
+  border: 0.1rem solid #15DEA5;
+  outline: none;
+  padding: 1.5rem;
+  margin-bottom: 0.75rem;
+}

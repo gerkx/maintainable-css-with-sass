@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background: #001534;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #15DEA5;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+input {
+  width: 100%;
+  background: #001534;
+  border: 0.1rem solid #15DEA5;
+  padding: 1.5rem;
+  color: #D6FFF5;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+table {
+  border: 1px solid #15DEA5;
+  padding: 1rem;
+}
+
+button {
+  padding: 1.5rem 3rem;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.75rem;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.container {
+  margin: 6rem;
+}
+
+.specificity {
+  margin-bottom: 2rem;
+}
+
+/* ------------------------------------- */
+/* End of template code. New code below  */
+/* ------------------------------------- */
+
+
+$pale-mint: #96dec9;
+
+@mixin min-sat($colour){
+    @if ( saturation($colour) < 60% ) {
+        $colour: saturate($colour, 60%);
+    }
+    background-color: $colour;
+}
+
+.block {
+    @include min-sat($pale-mint)
+}
+
+
+@if (lightness($colour) < 25% ) {
+    $colour: lighten($colour, 10%);
+}@else{
+    $colour: darken($colour, 10%);
+}

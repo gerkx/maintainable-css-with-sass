@@ -115,11 +115,18 @@ button {
 
 
 $colour-primary: #15DEA5;
+$colour-secondary: #001534;
+$colour-accent: #D6FFF5;
 $colour-white: #fff;
 $heading-shadow-size: 0.55rem;
 
 @mixin heading-shadow($colour: $colour-primary, $size: $heading-shadow-size){
-  text-shadow: $size $size darken($colour, 10%);
+  @if ( lightness($colour) < 25% ) {
+      $colour: lighten($colour, 10%);
+  }@else{
+      $colour: darken($colour, 10%);
+  }
+  text-shadow: $size $size $colour;
 }
 
 .form {

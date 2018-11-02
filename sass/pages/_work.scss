@@ -1,0 +1,47 @@
+.quote {
+    text-align: right;
+    font-size: 6rem;
+    font-weight: 900;
+    font-style: italic;
+    color: $colour-accent;
+    margin: 2rem $layout-margin ($layout-margin)*-0.5 $layout-margin;
+    strong {
+        color: $colour-primary;
+    }
+}
+
+.proj-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: $grid-gutter;
+}
+
+.proj-prev{
+    $self: &;
+    color: $colour-white;
+    margin-bottom: $grid-gutter;
+    &__image {
+        margin: 0;
+        opacity: .2;
+        @include img-ratio;
+    }
+    &__heading {
+        font-size: 4rem;
+        padding-left: 2.5rem;
+        margin: 0;
+        line-height: 6rem;
+    }
+    &__byline {
+        padding-left: 2.5rem;
+        font-size: 1.66rem;
+    }
+    &:hover {
+        cursor: pointer;
+        & > #{$self}__heading {
+            background: $colour-primary;
+        }
+        & > #{$self}__image {
+            opacity: 1;
+        }
+    }
+}

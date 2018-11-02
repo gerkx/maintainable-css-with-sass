@@ -1,0 +1,46 @@
+.about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 5fr; 
+    grid-template-rows: repeat(3, auto);
+    padding: $grid-gutter;
+    grid-template-areas:
+        "imagery heading"
+        "imagery copy"
+        "imagery btn";
+    margin-bottom: $grid-gutter;
+    &__heading {
+        grid-area: heading;
+        color: $colour-white;
+        @include heading-shadow;
+        text-align: right;
+        padding-right: $grid-gutter;
+    }
+    &__imagery {
+        grid-area: imagery;
+    }
+    &__pic {
+        overflow:hidden;
+        width: 80%;
+        border-radius: 1000rem;
+        border: 1.5rem solid $colour-primary;
+        & img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__copy {
+        grid-area: copy;
+        & p{
+            line-height: 2rem*1.2;
+            margin-bottom: $grid-gutter*2.25;
+        } 
+    }
+    &__btn{
+        @include btn;
+        grid-area: btn;
+        & a {
+            text-decoration: none;
+        }
+    }
+}

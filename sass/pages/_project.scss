@@ -1,0 +1,42 @@
+.project {
+    width: 100%;
+    margin-bottom: $grid-gutter*1.2;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: $grid-gutter;
+    grid-template-areas: 
+        "image synopsis"
+        "tags synopsis"
+        "btn btn";
+    &__image {
+        grid-area: image;
+        @include img-ratio;
+    }
+    &__synopsis {
+        grid-area: synopsis;
+        padding-left: $grid-gutter;
+        & h1 {
+            color: $colour-white;
+            @include heading-shadow;
+        }
+        & p {
+            line-height: 2rem*1.25;
+        }
+    }
+    &__tags {
+        grid-area: tags;
+        & p {
+            color: $colour-white;
+            & strong {
+                color: $colour-primary;
+                font-weight: 900;
+                font-style: italic;
+            }
+        }
+    }
+    &__btn {
+        @include btn;
+        grid-area: btn;
+    }
+}

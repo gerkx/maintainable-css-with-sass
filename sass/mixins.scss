@@ -60,7 +60,32 @@ body {
 }
 // ^^^^ template code ^^^^ //
 
-$mint: #15DEA5;
+
+
+
+
+
+
+
+
+$colour-primary: #15DEA5;
+$colour-white: #fff;
+
+.heading{
+  &__header {
+    text-shadow: .55rem .55rem $colour-white;  
+  }
+}
+.about{
+  &__heading {
+      text-shadow: .55rem .55rem $colour-primary;    
+  }
+}
+.project{
+  &__heading{
+    text-shadow: .55rem .55rem $colour-primary;  
+  }
+}
 
 .form {
   width: 100%;
@@ -68,8 +93,8 @@ $mint: #15DEA5;
   &__heading {
     width: 100%;
     color: #fff;
-    text-shadow: 0.55rem 0.55rem #11af82;
-    background: $mint;
+    text-shadow: .55rem .55rem $colour-primary;  
+    background: $colour-primary;
     line-height: 5rem;
     padding: 1.5rem;
   }
@@ -84,7 +109,7 @@ $mint: #15DEA5;
     input {
       width: 100%;
       background: #001534;
-      border: 0.1rem solid $mint;
+      border: 0.1rem solid $colour-primary;
       padding: 1.5rem;
       color: #D6FFF5;
       font-weight: 900;
@@ -93,9 +118,9 @@ $mint: #15DEA5;
     }
     textarea {
       width: 100%;
-      color: $mint;
+      color: $colour-primary;
       background: #001534;
-      border: 0.1rem solid $mint;
+      border: 0.1rem solid $colour-primary;
       outline: none;
       padding: 1.5rem;
       margin-bottom: 0.75rem;

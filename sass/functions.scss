@@ -120,12 +120,32 @@ $colour-accent: #D6FFF5;
 $colour-white: #fff;
 $heading-shadow-size: 0.55rem;
 
+@function lightness-shift($colour){
+  @if ( lightness($colour) < 25% ) {
+      $colour: lighten($colour, 10%);
+  }@else{
+      $colour: darken($colour, 10%);
+  }
+}
+
+@function lightness-shift($colour){
+  @if ( lightness($colour) < 25% ) {
+      @return lighten($colour, 10%);
+  }@else{
+      @return darken($colour, 10%);
+  }
+}
+
 @mixin heading-shadow($colour: $colour-primary, $size: $heading-shadow-size){
   @if ( lightness($colour) < 25% ) {
       $colour: lighten($colour, 10%);
   }@else{
       $colour: darken($colour, 10%);
   }
+  text-shadow: $size $size $colour;
+}
+
+@mixin heading-shadow($colour: lightness-shift($colour-primary), $size: $heading-shadow-size){
   text-shadow: $size $size $colour;
 }
 

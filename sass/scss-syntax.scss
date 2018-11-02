@@ -1,0 +1,25 @@
+
+///////////////////////////////
+// CSS Preprocessor features //
+///////////////////////////////
+
+// nesting
+.nav {
+    padding-right: 6rem;
+    flex: 2 1 auto;
+    text-align: right;
+    nav__link {
+        display: inline;
+        font-size: 3rem;
+        padding-left: 1.5rem;
+        nav__link--active {
+            color: #001534;;
+        }
+    }
+}
+
+
+.class-selector {
+    color: white;
+    background-color: black;
+}

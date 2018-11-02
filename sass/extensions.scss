@@ -1,23 +1,21 @@
 $colour-primary: #15DEA5;
-$colour-white: #fff;
-$heading-shadow-size: 0.55rem;
 
-@mixin heading-shadow($colour: $colour-primary, $size: $heading-shadow-size){
-  text-shadow: $size $size $colour;
+@mixin typography {
+  color: $colour-primary;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
 }
 
-.about{
-  &__heading {
-      @include heading-shadow;    
-  }
+h1 {
+  @include typography;
 }
-.form{
-  &__heading {
-      @include heading-shadow;    
-  }
+textarea {
+  @include typography;
 }
-.project{
-  &__heading{
-    @include heading-shadow;  
-  }
+button {
+  @include typography;
+}
+input {
+  @include typography;
 }

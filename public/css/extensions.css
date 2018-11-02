@@ -1,11 +1,27 @@
-.about__heading {
-  text-shadow: 0.55rem 0.55rem #15DEA5;
+h1 {
+  color: #15DEA5;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
 }
 
-.form__heading {
-  text-shadow: 0.55rem 0.55rem #15DEA5;
+textarea {
+  color: #15DEA5;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
 }
 
-.project__heading {
-  text-shadow: 0.55rem 0.55rem #15DEA5;
+button {
+  color: #15DEA5;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+input {
+  color: #15DEA5;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
 }

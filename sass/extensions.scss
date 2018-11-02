@@ -1,0 +1,23 @@
+$colour-primary: #15DEA5;
+$colour-white: #fff;
+$heading-shadow-size: 0.55rem;
+
+@mixin heading-shadow($colour: $colour-primary, $size: $heading-shadow-size){
+  text-shadow: $size $size $colour;
+}
+
+.about{
+  &__heading {
+      @include heading-shadow;    
+  }
+}
+.form{
+  &__heading {
+      @include heading-shadow;    
+  }
+}
+.project{
+  &__heading{
+    @include heading-shadow;  
+  }
+}

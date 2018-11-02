@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background: #001534;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #15DEA5;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    font-style: italic;
+  }
+.header {
+    background: #15DEA5;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .header__logo {
+    font-size: 7rem;
+    color: #001534;
+    margin-left: 10rem;
+    text-shadow: 0.55rem 0.55rem #fff;
+  }.nav {
+    padding-right: 6rem;
+    flex: 2 1 auto;
+    text-align: right;
+  }
+// ^^^^ template code ^^^^ //
+
+
+ul {
+    list-style: none;
+    text-align: right;
+    li {
+        display: inline;
+        font-size: 3rem;
+        color: #D6FFF5;
+        padding-left: 1.5rem;
+        cursor: pointer;
+        &:hover {
+            color: #001534;
+        }
+    }
+}
+
+
+
+
+.parent {
+    background-color: #15DEA5;
+    .descendant {
+      color: #fff;
+    }
+    > .child {
+      color: #D6FFF5;
+    }
+    + .adjacent {
+      color: #001534;
+    }
+  }

@@ -1,0 +1,19 @@
+{
+  "name": "writing-sass",
+  "version": "1.0.0",
+  "description": "Joe Blow's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+  },
+  "author": "gerkx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
+  },
+  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme"
+}
